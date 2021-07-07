@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@300;400;600;700;900&display=swap");
+
+$large: 1280px;
+$middle: 1024px;
+$small: 768px;
+$smallx: 400px;
+
+$font_first: "Raleway", sans-serif;
+$font_second: "Lato", sans-serif;
+
+$color_black: #000;
+$color_white: #fff;
+$color_grey: #c4c4c4;
+
+//general style & layout START
+* {
+    box-sizing: border-box;
+}

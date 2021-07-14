@@ -196,14 +196,40 @@
   width: 243px;
   height: 81px;
   background: #fff;
-  border: 1px solid #fff;
+  border: none;
   border-radius: 3px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
-  color: #000; }
+  color: #000;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  cursor: pointer; }
+
+.btn:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: red;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s; }
+
+.btn:hover:before {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg); }
 
 .table__text {
   margin-right: 9em; }
@@ -213,3 +239,61 @@
 
 .table__p {
   padding-bottom: 3em; }
+
+.contacts__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.contacts__map {
+  height: 400px;
+  width: 50%; }
+
+.contacts__pnones {
+  padding: 5% 10%; }
+
+.contacts__h {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000;
+  padding-bottom: 6%; }
+
+.contacts__item {
+  text-decoration: none;
+  color: #000;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px; }
+
+.icon-phone,
+.icon-envelop,
+.icon-location,
+.icon-instagram {
+  font-size: 36px; }
+
+.contacts__phone,
+.contacts__mail,
+.contacts__location {
+  padding-bottom: 1em; }
+
+.form {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url(../img/form.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 6% 14%;
+  position: relative; }
+
+.footer__wrapper {
+  padding: 10% 0; }

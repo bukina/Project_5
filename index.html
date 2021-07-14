@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="src/css/normalize.css">
     <link rel="stylesheet" href="src/css/style.css">
 
+
+    <link rel="stylesheet" href="src/iconmoon/style.css">
+
     <link rel="apple-touch-icon" sizes="180x180" href="src/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="src/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="src/favicon/favicon-16x16.png">
@@ -27,6 +30,8 @@
 
 
     <title>Bags&Tables</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 
 </head>
 
@@ -100,13 +105,69 @@
             </div>
         </section>
 
+        <section class="contacts">
+            <div class="contacts__wrapper">
+                <div id="map" class="contacts__map"></div>
+                <div class="contacts__pnones">
+                    <h2 class="contacts__h">CONTACT US</h2>
+                    <div class="contacts__phone"><span class="icon-phone"></span>
+                        <a class="contacts__item" href="tel:+0013568682454">+001
+                            356-868-2454 </a>
+                    </div>
+                    <div class="contacts__mail"><span class="icon-envelop"></span>
+                        <a href="malito:bags@mail.ua" class="contacts__item">bags@mail.ua</a>
+                    </div>
+                    <div class="contacts__location"><span class="icon-location"></span>
+                        <a href="#" class="contacts__item">12 Thin Str., Kiev</a>
+                    </div>
+                    <div class="contacts__insta"><span class="icon-instagram"></span>
+                        <a href="#" class="contacts__item">@bagsandtable</a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="form">
+
+            <div class="contacts__form">
+                <div class="form__register-name">
+
+                    <input class="input-name" placeholder="name" id="name" type="text" required>
+                </div>
+                <div class="form__register-phone">
+
+                    <input class="input-email" placeholder="Email" id="email" type="email" required>
+                </div>
+                <button class="form__btn btn">submit</button>
+
+            </div>
+
+        </section>
+
+
+        <footer class="footer">
+            <header class="footer__wrapper header">
+                <p class="footer__logo header__logo logo">Bags&Tables</p>
+                <nav class="footer__nav header__nav">
+                    <div class=" header__nav-item">about</div>
+                    <div class="footer__nav-item header__nav-item">bag</div>
+                    <div class="footer__nav-item header__nav-item">table</div>
+                    <div class="footer__nav-item header__nav-item">contacts</div>
+                </nav>
+            </header>
+        </footer>
+
+
+
 
 
 
     </main>
 
 
-
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="src/js/script.js"></script>
 </body>
 
 </html>

@@ -69,6 +69,10 @@ body {
     display: none;
 }
 @media (max-width: 1000px) {
+    .header.active {
+        height: 180px;
+    }
+
     .header__burger {
         display: block;
         position: relative;
@@ -118,7 +122,7 @@ body {
     .header__nav {
         display: block;
         position: absolute;
-        top: -300%;
+        top: -400%;
         left: 50%;
         transition: all 0.6s ease 0s;
         text-align: center;

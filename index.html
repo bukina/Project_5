@@ -27,6 +27,9 @@
     <meta property="og:url" content="https://bukina.github.io/exam/">
     <meta property="og:image" content="https://bukina.github.io/exam/src/meta-og/og-image.jpg">
 
+    <link rel="stylesheet" href="src/libs/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="src/libs/slick-1.8.1/slick/slick-theme.css">
+
 
 
     <title>Bags&Tables</title>
@@ -45,10 +48,10 @@
             <span></span>
         </div>
         <nav class="header__nav">
-            <div class="header__nav-item">about</div>
-            <div class="header__nav-item">bag</div>
-            <div class="header__nav-item">table</div>
-            <div class="header__nav-item">contacts</div>
+            <div class="header__nav-item nav-about">about</div>
+            <div class="header__nav-item nav-bag">bag</div>
+            <div class="header__nav-item nav-table">table</div>
+            <div class="header__nav-item nav-contacts">contacts</div>
         </nav>
 
 
@@ -70,13 +73,16 @@
 
     <section class="about">
 
-        <h2 class="about__h ">ABOUT</h2>
-        <p class="about__p">Family business has been as common in the Indian economy like elsewhere in the world, it
-            is perceived in a common sense. Various terms like ‘family-owned,’ family controlled,’ ‘family
-            managed’.</p>
-        <p class="about__p-2">Family business has been as common in the Indian economy like elsewhere in the world,
-            it is perceived in a common sense. Various terms like ‘family-owned,’ family controlled,’ ‘family
-            managed’.</p>
+        <div class="about__wrapper">
+
+            <h2 class="about__h ">ABOUT</h2>
+            <p class="about__p">Family business has been as common in the Indian economy like elsewhere in the world, it
+                is perceived in a common sense. Various terms like.</p>
+            <p class="about__p-2">Family business has been as common in the Indian economy like elsewhere in the world,
+                it is perceived in a common sense. Various terms like ‘family-owned,’ family controlled,’ ‘family
+                managed’.</p>
+
+        </div>
     </section>
 
     <section class="bag">
@@ -115,42 +121,67 @@
             <div id="map" class="contacts__map"></div>
             <div class="contacts__pnones">
                 <h2 class="contacts__h">CONTACT US</h2>
-                <div class="contacts__phone"><span class="icon-phone"></span>
-                    <a class="contacts__item" href="tel:+0013568682454">+001
-                        356-868-2454 </a>
+                <div class="contacts__phone">
+                    <a class="contacts__item" href="tel:+0013568682454"><span class="icon-phone"></span>+001
+                        356-868</a>
                 </div>
-                <div class="contacts__mail"><span class="icon-envelop"></span>
-                    <a href="malito:bags@mail.ua" class="contacts__item">bags@mail.ua</a>
+                <div class="contacts__mail">
+                    <a href="malito:bags@gmail.com" class="contacts__item"><span
+                            class="icon-envelop"></span>bags@gmail.com</a>
                 </div>
-                <div class="contacts__location"><span class="icon-location"></span>
-                    <a href="#" class="contacts__item">12 Thin Str., Kiev</a>
+                <div class="contacts__location">
+                    <a href="https://www.google.com.ua/maps/place/%D0%9A%D0%BE%D0%BC%D1%84%D0%BE%D1%80%D1%82+%D0%A2%D0%B0%D1%83%D0%BD/@50.4330725,30.6204392,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4c568143feba1:0x81deed3e317d95af!8m2!3d50.4330691!4d30.6226279?hl=ru"
+                        target="_blank" class="contacts__item"><span class="icon-location"></span>12 Thin Str., Kiev</a>
                 </div>
-                <div class="contacts__insta"><span class="icon-instagram"></span>
-                    <a href="#" class="contacts__item">@bagsandtable</a>
+                <div class="contacts__insta">
+                    <a href="https://www.instagram.com/?hl=ru" target="_blank" class="contacts__item"><span
+                            class="icon-instagram"></span>@bagsandtable</a>
 
                 </div>
             </div>
         </div>
     </section>
+
+
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__slider">
+                <div class="footer__slide">
+                    <img src="src/img/slider1.jpg" alt="couple" class="footer__img">
+                </div>
+                <div class="footer__slide">
+                    <img src="src/img/slider2.jpg" alt="couple" class="footer__img">
+                </div>
+
+                <div class="footer__slide">
+                    <img src="src/img/slider4.jpg" alt="couple" class="footer__img">
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
 
     <section class="form">
-
         <div class="contacts__form">
-            <div class="contacts__form-items">
-                <div class="form__register-name">
+            <form action="">
+                <div class="contacts__form-items">
+                    <div class="form__register-name">
 
-                    <input class="input-name input" placeholder="name" id="name" type="text" required>
+                        <input class="input-name input" placeholder="name" id="name" type="text" required>
+                    </div>
+                    <div class="form__register-phone">
+
+                        <input class="input-email input" placeholder="email" id="email" type="email" required>
+                    </div>
                 </div>
-                <div class="form__register-phone">
-
-                    <input class="input-email input" placeholder="email" id="email" type="email" required>
-                </div>
-            </div>
-            <button class="form__btn btn">submit</button>
-
+                <button type="submit" class="form__btn btn">submit</button>
+            </form>
         </div>
 
     </section>
+
 
 
 
@@ -163,6 +194,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
+
+    <script src="src/libs/slick-1.8.1/slick/slick.min.js"></script>
 
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="src/js/script.js"></script>

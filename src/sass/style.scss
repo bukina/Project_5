@@ -280,6 +280,7 @@ body {
 }
 .bag__img {
     padding-top: 11%;
+    width: 100%;
 }
 
 .bag__wrapper {
@@ -288,6 +289,7 @@ body {
 
     @media (max-width: 768px) {
         flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -335,6 +337,11 @@ body {
     z-index: 1;
     overflow: hidden;
     cursor: pointer;
+
+    @media (max-width: 768px) {
+        width: 180px;
+        height: 50px;
+    }
 }
 
 .btn:before {
@@ -374,6 +381,11 @@ body {
     justify-content: center;
     padding-top: 3%;
     background-color: $color_grey;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .contacts__map {
@@ -457,6 +469,11 @@ body {
 .form__items {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .form__btn {
@@ -465,6 +482,10 @@ body {
     top: 35%;
     background-color: $color_black;
     color: $color_white;
+
+    @media (max-width: 768px) {
+        left: 40%;
+    }
 }
 
 .input {

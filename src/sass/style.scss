@@ -285,6 +285,10 @@ body {
 .bag__wrapper {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
 }
 
 .bag__div-img {

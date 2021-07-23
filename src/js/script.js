@@ -1,10 +1,6 @@
-
-
-
-
 "use strict";
 
-//map
+//MAP START
 
 var map = L.map('map', {
     center: [50.43692747994574, 30.619796082239485],
@@ -17,13 +13,12 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?{foo}', { foo: '
 
 L.marker([50.43692747994574, 30.619796082239485]).addTo(map);
 
-//map
+//MAP END
 
 
 
 
-//burger-menu
-
+//BURGER START
 
 $(document).ready(function () {
     $('.header__burger').click(function (event) {
@@ -35,10 +30,11 @@ $(document).ready(function () {
 
 });
 
-//burger-menu
+//BURGER END
 
 
-//scroll
+
+// SCROLL START
 
 function scrollTo(element) {
     window.scroll({
@@ -84,10 +80,11 @@ contactsNav.addEventListener('click', () => {
 });
 
 
-//scroll
+//SCROLL END
 
 
-//form validation
+
+//FORM VALIDATION START
 
 function validate() {
     let userName = document.getElementById("name");
@@ -105,10 +102,11 @@ function validate() {
     return true;
 }
 
-//form validation
+//FORM VALIDATION END
 
 
-//slider
+
+//SLIDER START
 
 $(document).ready(function () {
     $('.footer__slider').slick({
@@ -122,7 +120,7 @@ $(document).ready(function () {
     });
 });
 
-//slider
+//SLIDER END
 
 
 

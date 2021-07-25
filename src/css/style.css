@@ -328,7 +328,10 @@ body {
   transform: rotate(0deg); }
 
 .table__text {
-  margin-right: 9em; }
+  margin-right: 5em; }
+  @media (max-width: 768px) {
+    .table__text {
+      margin-right: 0; } }
 
 .table__p {
   padding-bottom: 3em; }
@@ -423,7 +426,7 @@ body {
 .form__btn-wrapper {
   display: flex;
   justify-content: space-between;
-  padding-top: 5%; }
+  padding-top: 3%; }
   @media (max-width: 768px) {
     .form__btn-wrapper {
       flex-direction: column;

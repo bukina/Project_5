@@ -389,7 +389,10 @@ body {
 }
 
 .table__text {
-    margin-right: 9em;
+    margin-right: 5em;
+    @media (max-width: 768px) {
+        margin-right: 0;
+    }
 }
 
 
@@ -511,7 +514,7 @@ body {
 .form__btn-wrapper{
     display: flex;
     justify-content: space-between;
-    padding-top: 5%;
+    padding-top: 3%;
 
     @media (max-width: 768px) {
         flex-direction: column;

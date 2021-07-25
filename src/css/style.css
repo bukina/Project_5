@@ -266,7 +266,7 @@ body {
       align-items: center; } }
 
 .bag__div-img {
-  margin-right: 9em; }
+  margin-right: 5em; }
 
 .bag__text {
   padding-top: 6%; }
@@ -332,6 +332,10 @@ body {
 
 .table__p {
   padding-bottom: 3em; }
+
+@media (max-width: 768px) {
+  .table__img {
+    display: none; } }
 
 .contacts__wrapper {
   display: flex;
@@ -420,6 +424,10 @@ body {
   display: flex;
   justify-content: space-between;
   padding-top: 5%; }
+  @media (max-width: 768px) {
+    .form__btn-wrapper {
+      flex-direction: column;
+      align-items: center; } }
 
 .btn-none {
   visibility: hidden; }

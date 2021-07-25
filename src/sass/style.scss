@@ -321,7 +321,7 @@ body {
 }
 
 .bag__div-img {
-    margin-right: 9em;
+    margin-right: 5em;
 }
 
 .bag__text {
@@ -395,6 +395,13 @@ body {
 
 .table__p {
     padding-bottom: 3em;
+}
+
+.table__img{
+    @media (max-width: 768px) {
+        display: none;
+    }
+
 }
 
 //section BAG, TABLE END
@@ -505,6 +512,11 @@ body {
     display: flex;
     justify-content: space-between;
     padding-top: 5%;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .btn-none{

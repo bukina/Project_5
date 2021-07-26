@@ -54,7 +54,8 @@ body {
 
 @media (max-width: 768px) {
   .header.active {
-    height: 180px; }
+    height: 180px;
+    padding-bottom: 3%; }
 
   .header__burger {
     display: block;

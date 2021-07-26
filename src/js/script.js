@@ -93,10 +93,12 @@ function validate() {
     e.preventDefault();
 
     if (!userName.value) {
+        userName.style.border = "1px solid red";
         return false;
     }
 
     if (!userMail.value) {
+        userMail.style.border = "1px solid red";
         return false;
     }
     return true;
